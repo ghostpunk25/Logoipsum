@@ -1025,19 +1025,6 @@ h6 {
     grid-template-columns: 300px 1fr;
   }
 
-  .mainpage__items {
-    -ms-grid-column-align: center;
-        justify-self: center;
-    text-align: center;
-    -ms-grid-column-span: 2;
-    grid-column: span 2;
-  }
-
-  .mainpage__slider {
-    -ms-grid-column-span: 2;
-    grid-column: span 2;
-  }
-
   .text-sales {
     top: 30%;
     left: 23%;
@@ -1110,6 +1097,14 @@ h6 {
     gap: 30px;
   }
 
+  .mainpage__items {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
   .mainpage__title {
     max-width: 400px;
     text-align: center;
@@ -1118,6 +1113,11 @@ h6 {
   .mainpage__button {
     text-align: center;
     padding: 22px 20px 22px 20px;
+  }
+
+  .mainpage__slider {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
   }
 
   .collection__title {
