@@ -1025,6 +1025,12 @@ h6 {
     grid-template-columns: 300px 1fr;
   }
 
+  .mainpage__items {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+  }
+
   .text-sales {
     top: 30%;
     left: 23%;
@@ -1101,8 +1107,6 @@ h6 {
     -ms-grid-column-align: center;
         justify-self: center;
     text-align: center;
-    -ms-grid-column-span: 2;
-    grid-column: span 2;
   }
 
   .mainpage__title {
@@ -1113,11 +1117,6 @@ h6 {
   .mainpage__button {
     text-align: center;
     padding: 22px 20px 22px 20px;
-  }
-
-  .mainpage__slider {
-    -ms-grid-column-span: 2;
-    grid-column: span 2;
   }
 
   .collection__title {
