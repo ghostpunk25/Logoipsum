@@ -1029,6 +1029,13 @@ h6 {
     -ms-grid-column-align: center;
         justify-self: center;
     text-align: center;
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
+  .mainpage__slider {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
   }
 
   .text-sales {
@@ -1101,12 +1108,6 @@ h6 {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-  }
-
-  .mainpage__items {
-    -ms-grid-column-align: center;
-        justify-self: center;
-    text-align: center;
   }
 
   .mainpage__title {
