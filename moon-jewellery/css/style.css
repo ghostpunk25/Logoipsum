@@ -230,7 +230,7 @@ h6 {
   -o-transition: left 0.3 ease 0s;
   transition: left 0.3 ease 0s;
   padding-top: 150px;
-  background: rgba(206, 206, 206, 0.623);
+  background: rgba(206, 206, 206, 0.9);
   border-right: 1px solid #000;
 }
 
