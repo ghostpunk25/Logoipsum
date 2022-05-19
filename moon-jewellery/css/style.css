@@ -1129,12 +1129,20 @@ h6 {
     text-align: center;
   }
 
+  .decorations__items {
+    gap: 20px;
+  }
+
   .decorations__sales {
     -ms-grid-column-span: 12;
     grid-column: span 12;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+
+  .decorations__text {
+    padding: 10px;
   }
 
   .decorations__promotional {
@@ -1170,8 +1178,8 @@ h6 {
   }
 
   .text-sales {
-    top: 30%;
-    left: 31%;
+    top: 35%;
+    left: 32%;
   }
 
   .text-promotional {
@@ -1181,22 +1189,22 @@ h6 {
 
   .text-her {
     top: 20%;
-    left: 20%;
+    left: 25%;
   }
 
   .text-gold {
-    top: 20%;
-    left: 22%;
+    top: 30%;
+    left: 27%;
   }
 
   .text-silver {
-    top: 20%;
-    left: 22%;
+    top: 30%;
+    left: 27%;
   }
 
   .text-him {
     top: 20%;
-    left: 19%;
+    left: 24%;
   }
 
   .benefits__title {
