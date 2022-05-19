@@ -1118,6 +1118,7 @@ h6 {
   .mainpage__slider {
     -ms-grid-column-span: 2;
     grid-column: span 2;
+    width: 100%;
   }
 
   .collection__title {
