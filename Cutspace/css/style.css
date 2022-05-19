@@ -351,7 +351,7 @@ body::after {
   letter-spacing: 1.15px;
 }
 
-.no-webp .section-one__container {
+.section-one__container {
   background: url("../img/1. Section-one/bilding.jpg") top right no-repeat;
 }
 
@@ -593,12 +593,9 @@ body::after {
   background: #fda128;
 }
 
-.no-webp .using-star {
-  background: url("../img/2. Section-two/Bg.png") 0 0/cover no-repeat;
-}
-
 .using-star {
   padding: 92px 0px 91px 0px;
+  background: url("../img/2. Section-two/Bg.png") 0 0/cover no-repeat;
   position: relative;
   bottom: -232px;
 }
@@ -966,14 +963,11 @@ body::after {
   position: relative;
 }
 
-.no-webp .items-thanks::before {
-  background: url("../img/5. Section-thenks/Design element.png") no-repeat;
-}
-
 .items-thanks::before {
   content: "";
   width: 80px;
   height: 80px;
+  background: url("../img/5. Section-thenks/Design element.png") no-repeat;
   position: absolute;
   top: -40px;
   right: -40px;
@@ -1044,25 +1038,19 @@ body::after {
   position: relative;
 }
 
-.no-webp .play::before {
-  background: url("../img/5. Section-thenks/Play btn.png") no-repeat;
-}
-
 .play::before {
   content: "";
   width: 50px;
   height: 50px;
+  background: url("../img/5. Section-thenks/Play btn.png") no-repeat;
   position: absolute;
   top: 134px;
   right: 20px;
 }
 
-.no-webp .section-experience {
-  background: url("../img/6. Section-experience/girl.png") 70% 0px no-repeat, url("../img/6. Section-experience/Bg.png") 85% 0/cover no-repeat;
-}
-
 .section-experience {
   padding-top: 211px;
+  background: url("../img/6. Section-experience/girl.png") 70% 0px no-repeat, url("../img/6. Section-experience/Bg.png") 85% 0/cover no-repeat;
 }
 
 .section-experience__body {
@@ -1101,6 +1089,7 @@ body::after {
 .section-experience__button {
   background: #fff;
   color: #323232;
+  cursor: pointer;
 }
 
 .popup__text {
@@ -1439,26 +1428,6 @@ body::after {
     -ms-flex-pack: center;
     justify-content: center;
   }
-}
-
-.webp .section-one__container {
-  background: url("../img/1. Section-one/bilding.jpg") top right no-repeat;
-}
-
-.webp .using-star {
-  background: url("../img/2. Section-two/Bg.png") 0 0/cover no-repeat;
-}
-
-.webp .items-thanks::before {
-  background: url("../img/5. Section-thenks/Design element.png") no-repeat;
-}
-
-.webp .play::before {
-  background: url("../img/5. Section-thenks/Play btn.png") no-repeat;
-}
-
-.webp .section-experience {
-  background: url("../img/6. Section-experience/girl.png") 70% 0px no-repeat, url("../img/6. Section-experience/Bg.png") 85% 0/cover no-repeat;
 }
 
 @media (max-width: 22.1875em) {
