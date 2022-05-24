@@ -526,6 +526,7 @@ body {
 }
 
 .porten {
+  min-height: 100vh;
   background: url("../img/2. Porten/Porten.jpg") 50% 0/cover no-repeat;
   padding-top: 11.25rem;
   padding-bottom: 9.625rem;
@@ -1010,8 +1011,8 @@ body {
 
 @-webkit-keyframes new-collection {
   0% {
-    -webkit-transform: translate(100%, 0);
-    transform: translate(100%, 0);
+    -webkit-transform: translate(100%);
+    transform: translate(100%);
   }
 
   100% {
@@ -1022,8 +1023,8 @@ body {
 
 @keyframes new-collection {
   0% {
-    -webkit-transform: translate(100%, 0);
-    transform: translate(100%, 0);
+    -webkit-transform: translate(100%);
+    transform: translate(100%);
   }
 
   100% {
@@ -1039,8 +1040,8 @@ body {
 
 @-webkit-keyframes old-collection {
   0% {
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%);
+    transform: translate(-100%);
   }
 
   100% {
@@ -1051,27 +1052,14 @@ body {
 
 @keyframes old-collection {
   0% {
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%);
+    transform: translate(-100%);
   }
 
   100% {
     -webkit-transform: translate(0%);
     transform: translate(0%);
   }
-}
-
-.new-items {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
-  -webkit-column-gap: 1.4375rem;
-  -moz-column-gap: 1.4375rem;
-  column-gap: 1.4375rem;
-  row-gap: 2.5rem;
-  padding: 0;
-  margin: 0;
 }
 
 @media (max-width: 35em) {
@@ -1148,6 +1136,30 @@ body {
   }
 
   @keyframes new-collection {
+    0% {
+      -webkit-transform: translate(0%);
+      transform: translate(0%);
+    }
+
+    100% {
+      -webkit-transform: translate(0%);
+      transform: translate(0%);
+    }
+  }
+
+  @-webkit-keyframes old-collection {
+    0% {
+      -webkit-transform: translate(0%);
+      transform: translate(0%);
+    }
+
+    100% {
+      -webkit-transform: translate(0%);
+      transform: translate(0%);
+    }
+  }
+
+  @keyframes old-collection {
     0% {
       -webkit-transform: translate(0%);
       transform: translate(0%);
@@ -1305,6 +1317,19 @@ body {
     height: 1.875rem;
     width: 18.75rem;
   }
+}
+
+.new-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 1.4375rem;
+  -moz-column-gap: 1.4375rem;
+  column-gap: 1.4375rem;
+  row-gap: 2.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 47.99875em) {
