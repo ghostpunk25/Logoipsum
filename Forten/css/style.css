@@ -880,19 +880,23 @@ body {
 }
 
 ._watcher-view.porten__body {
-  -webkit-animation: body 0.5s;
-  animation: body 0.5s;
+  -webkit-animation: body 1s;
+  animation: body 1s;
 }
 
 @-webkit-keyframes body {
   0% {
     -webkit-transform: scale(0);
     transform: scale(0);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
   }
 
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -900,17 +904,21 @@ body {
   0% {
     -webkit-transform: scale(0);
     transform: scale(0);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
   }
 
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
 ._watcher-view.porten__title {
-  -webkit-animation: title 1s;
-  animation: title 1s;
+  -webkit-animation: title 1.5s;
+  animation: title 1.5s;
 }
 
 @-webkit-keyframes title {
@@ -938,8 +946,8 @@ body {
 }
 
 ._watcher-view.porten__subtitle {
-  -webkit-animation: subtitle 1.2s;
-  animation: subtitle 1.2s;
+  -webkit-animation: subtitle 1.5s;
+  animation: subtitle 1.5s;
 }
 
 @-webkit-keyframes subtitle {
@@ -1131,15 +1139,11 @@ body {
     0% {
       -webkit-transform: translate(0%);
       transform: translate(0%);
-      -webkit-transform: scale(0);
-      transform: scale(0);
     }
 
     100% {
       -webkit-transform: translate(0%);
       transform: translate(0%);
-      -webkit-transform: scale(1);
-      transform: scale(1);
     }
   }
 
@@ -1147,15 +1151,11 @@ body {
     0% {
       -webkit-transform: translate(0%);
       transform: translate(0%);
-      -webkit-transform: scale(0);
-      transform: scale(0);
     }
 
     100% {
       -webkit-transform: translate(0%);
       transform: translate(0%);
-      -webkit-transform: scale(1);
-      transform: scale(1);
     }
   }
 }
