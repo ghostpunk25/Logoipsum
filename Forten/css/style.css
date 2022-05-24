@@ -607,7 +607,7 @@ body {
   display: block;
   padding-top: 3.125rem;
   position: relative;
-  left: 45%;
+  left: 42%;
 }
 
 .season__items {
@@ -618,7 +618,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0rem 1.875rem 0rem 0rem;
+  padding: 0rem 1.875rem 0rem 1.875rem;
 }
 
 @supports (gap: clamp( 1.25rem , 0.5182926829rem  +  3.6585365854vw , 3.125rem )) {
@@ -819,6 +819,25 @@ body {
   color: #000;
 }
 
+.season__tittle_new {
+  font-family: "Playfair Display";
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  text-transform: uppercase;
+  padding-bottom: 3.125rem;
+  text-align: center;
+}
+
+.season__tittle_new::after {
+  content: "";
+  border-bottom: 0.0625rem solid #fff;
+  width: 7.5rem;
+  display: block;
+  padding-top: 3.125rem;
+  position: relative;
+  left: 42%;
+}
+
 .new-items {
   display: -ms-grid;
   display: grid;
@@ -909,7 +928,7 @@ body {
 
   .season__items {
     margin: 0rem 1.25rem;
-    padding: 0rem 2.5rem 0rem 1.25rem;
+    padding: 0rem 1.875rem 0rem 0rem;
   }
 
   .old-collection__picture {
@@ -1087,6 +1106,10 @@ body {
     display: none;
   }
 
+  .season__tittle_new::after {
+    display: none;
+  }
+
   .new-items {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
@@ -1095,9 +1118,25 @@ body {
 }
 
 @media (max-width: 29.99875em) {
+  .season__tittle {
+    margin: 0rem 1.875rem 0rem 0rem;
+  }
+
   .season__items {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 1.875rem;
+  }
+
+  .new-collection__title {
+    margin: 0rem 1.875rem 0rem 0rem;
+  }
+
+  .new-collection__button {
+    margin: 0rem 1.875rem 0rem 0rem;
+  }
+
+  .season__tittle_new {
+    margin: 0rem;
   }
 }
