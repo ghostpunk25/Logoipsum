@@ -1051,6 +1051,7 @@ h6 {
   .mainpage__body {
     -ms-grid-columns: 300px 1fr;
     grid-template-columns: 300px 1fr;
+    gap: 60px;
   }
 
   .text-sales {
@@ -1115,7 +1116,7 @@ h6 {
             justify-content: center;
   }
 
-  .mainpage__body {
+  .mainpage {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
