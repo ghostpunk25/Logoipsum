@@ -242,6 +242,9 @@ body {
 }
 
 .btn:hover {
+   -webkit-transition: all .3s ease 0s;
+   -o-transition: all .3s ease 0s;
+   transition: all .3s ease 0s;
    background: #880808 url("../img/1. Header/Button bg.png") right center no-repeat
 }
 
@@ -319,6 +322,9 @@ body {
 }
 
 .menu__link:hover {
+   -webkit-transition: all .3s ease 0s;
+   -o-transition: all .3s ease 0s;
+   transition: all .3s ease 0s;
    color: #c40b0b
 }
 
@@ -356,6 +362,9 @@ body {
 }
 
 .sub-menu__link:hover {
+   -webkit-transition: all .3s ease 0s;
+   -o-transition: all .3s ease 0s;
+   transition: all .3s ease 0s;
    color: #c40b0b
 }
 
@@ -780,6 +789,9 @@ body {
 }
 
 .video-block__title:hover {
+   -webkit-transition: all .3s ease 0s;
+   -o-transition: all .3s ease 0s;
+   transition: all .3s ease 0s;
    color: #aaa
 }
 
@@ -819,6 +831,9 @@ body {
 }
 
 .services__items:hover {
+   -webkit-transition: all .3s ease 0s;
+   -o-transition: all .3s ease 0s;
+   transition: all .3s ease 0s;
    -webkit-filter: drop-shadow(0 8px 16px rgba(38, 38, 38, .24)) drop-shadow(0 16px 24px rgba(38, 38, 38, .2));
    filter: drop-shadow(0 8px 16px rgba(38, 38, 38, .24)) drop-shadow(0 16px 24px rgba(38, 38, 38, .2))
 }
@@ -2439,6 +2454,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
    }
 
    .footer__btn:hover {
+      -webkit-transition: all .3s ease 0s;
+      -o-transition: all .3s ease 0s;
+      transition: all .3s ease 0s;
       color: #c40b0b
    }
 

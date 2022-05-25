@@ -300,6 +300,9 @@ body {
 }
 
 .menu__link:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   color: #34C759;
 }
 
@@ -431,6 +434,9 @@ body {
 }
 
 .favourite-food__button:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   background: #23883c;
 }
 
@@ -487,7 +493,7 @@ body {
   color: #303030;
   position: absolute;
   top: 0;
-  left: 183px;
+  left: 11.4375rem;
   z-index: -1;
 }
 
@@ -571,6 +577,9 @@ body {
 }
 
 .item-cards:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   background: #34C759;
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -739,6 +748,9 @@ body {
 }
 
 .card-body__button:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   background: #34C759;
   color: #252525;
 }
@@ -970,6 +982,9 @@ body {
 }
 
 .item-small_bg:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   background: #34C759;
   color: #000;
 }

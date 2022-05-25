@@ -250,6 +250,9 @@ body {
 }
 
 .btn:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   background: #880808 url("../img/1. Header/Button bg.png") right center no-repeat;
 }
 
@@ -327,6 +330,9 @@ body {
 }
 
 .menu__link:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   color: #C40B0B;
 }
 
@@ -364,6 +370,9 @@ body {
 }
 
 .sub-menu__link:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   color: #C40B0B;
 }
 
@@ -788,6 +797,9 @@ body {
 }
 
 .video-block__title:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   color: rgb(170, 170, 170);
 }
 
@@ -827,6 +839,9 @@ body {
 }
 
 .services__items:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   -webkit-filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
   filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
 }
@@ -2449,6 +2464,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .footer__btn:hover {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
     color: #C40B0B;
   }
 
