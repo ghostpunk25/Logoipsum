@@ -197,7 +197,7 @@ h6 {
   top: 0;
   background: #fff;
   z-index: 3;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -211,6 +211,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
 }
 
 .header__logo {
@@ -218,6 +221,31 @@ h6 {
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.05em;
+  text-align: center;
+}
+
+@supports (font-size: clamp( 1.5rem , 0.4565217391rem  +  5.2173913043vw , 2.25rem )) {
+  .header__logo {
+    font-size: clamp( 1.5rem , 0.4565217391rem  +  5.2173913043vw , 2.25rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.4565217391rem  +  5.2173913043vw , 2.25rem )) {
+  .header__logo {
+    font-size: calc(1.5rem + 0.75 * (100vw - 20rem) / 14.375);
+  }
+}
+
+@supports (line-height: clamp( 1.75rem , 0.5326086957rem  +  6.0869565217vw , 2.625rem )) {
+  .header__logo {
+    line-height: clamp( 1.75rem , 0.5326086957rem  +  6.0869565217vw , 2.625rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.75rem , 0.5326086957rem  +  6.0869565217vw , 2.625rem )) {
+  .header__logo {
+    line-height: calc(1.75rem + 0.875 * (100vw - 20rem) / 14.375);
+  }
 }
 
 .menu__body {
@@ -430,9 +458,9 @@ h6 {
 }
 
 .footer__button:hover {
-  -webkit-transition: all 0.5 ease 0s;
-  -o-transition: all 0.5 ease 0s;
-  transition: all 0.5 ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   background: rgb(136, 136, 136);
 }
 
@@ -1061,10 +1089,6 @@ h6 {
 }
 
 @media (max-width: 29.99875em) {
-  .header__logo {
-    font-size: 28px;
-  }
-
   .footer__items {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1169,6 +1193,18 @@ h6 {
         -ms-flex-order: 3;
             order: 3;
   }
+
+@supports (gap: clamp( 2.8125rem , 0.0852272727rem  +  13.6363636364vw , 3.75rem )) {
+    .decorations__item {
+      gap: clamp( 2.8125rem , 0.0852272727rem  +  13.6363636364vw , 3.75rem );
+    }
+}
+
+@supports not (gap: clamp( 2.8125rem , 0.0852272727rem  +  13.6363636364vw , 3.75rem )) {
+    .decorations__item {
+      gap: calc(2.8125rem + 0.9375 * (100vw - 20rem) / 6.875);
+    }
+}
 
   .decorations__him {
     -ms-grid-column-span: 6;
