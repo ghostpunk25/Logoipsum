@@ -420,6 +420,9 @@ body::after {
 }
 
 .section-one__button:hover {
+   -webkit-transition: all .3s ease 0s;
+   -o-transition: all .3s ease 0s;
+   transition: all .3s ease 0s;
    background: #fda128
 }
 
@@ -582,6 +585,9 @@ body::after {
 }
 
 .btn:hover {
+   -webkit-transition: all .3s ease 0s;
+   -o-transition: all .3s ease 0s;
+   transition: all .3s ease 0s;
    background: #fda128
 }
 
@@ -664,6 +670,9 @@ body::after {
 }
 
 .using-star__button:hover {
+   -webkit-transition: all .3s ease 0s;
+   -o-transition: all .3s ease 0s;
+   transition: all .3s ease 0s;
    background: #fff;
    color: #000
 }
@@ -686,6 +695,9 @@ body::after {
 }
 
 .using-star__button_white:hover {
+   -webkit-transition: all .3s ease 0s;
+   -o-transition: all .3s ease 0s;
+   transition: all .3s ease 0s;
    background: #f78434;
    color: #fff
 }
@@ -786,6 +798,9 @@ body::after {
 }
 
 .item-buyers__button:hover {
+   -webkit-transition: all .3s ease 0s;
+   -o-transition: all .3s ease 0s;
+   transition: all .3s ease 0s;
    background: #e2e1e1
 }
 
@@ -980,6 +995,9 @@ body::after {
 }
 
 .items-thanks__item:hover {
+   -webkit-transition: all .3s ease 0s;
+   -o-transition: all .3s ease 0s;
+   transition: all .3s ease 0s;
    -webkit-box-shadow: 0 7px 16px 3px rgba(0, 0, 0, .17);
    box-shadow: 0 7px 16px 3px rgba(0, 0, 0, .17);
    color: #f78434
@@ -1068,6 +1086,18 @@ body::after {
 @supports not (font-size:clamp(2.125rem, 0.125rem + 10vw, 2.625rem)) {
    .section-experience__title {
       font-size: calc(2.125rem + .5 * (100vw - 20rem)/ 5)
+   }
+}
+
+@supports (line-height:clamp(2.75rem, -1.75rem + 22.5vw, 3.875rem)) {
+   .section-experience__title {
+      line-height: clamp(2.75rem, -1.75rem + 22.5vw, 3.875rem)
+   }
+}
+
+@supports not (line-height:clamp(2.75rem, -1.75rem + 22.5vw, 3.875rem)) {
+   .section-experience__title {
+      line-height: calc(2.75rem + 1.125 * (100vw - 20rem)/ 5)
    }
 }
 
@@ -1179,14 +1209,16 @@ body::after {
       background: rgba(0, 0, 0, .7);
       border-radius: 5%;
       -webkit-box-shadow: 0 0 15px 7px rgba(0, 0, 0, .7);
-      box-shadow: 0 0 15px 7px rgba(0, 0, 0, .7)
+      box-shadow: 0 0 15px 7px rgba(0, 0, 0, .7);
+      padding: 10px
    }
 
    .section-experience__body {
       background: rgba(0, 0, 0, .7);
       border-radius: 5%;
       -webkit-box-shadow: 0 0 15px 7px rgba(0, 0, 0, .7);
-      box-shadow: 0 0 15px 7px rgba(0, 0, 0, .7)
+      box-shadow: 0 0 15px 7px rgba(0, 0, 0, .7);
+      padding: 10px 10px 30px 10px
    }
 }
 
