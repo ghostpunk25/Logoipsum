@@ -241,7 +241,7 @@ h6 {
 }
 
 .header__logo {
-  z-index: 2;
+  z-index: 3;
 }
 
 .header__button {
@@ -1320,6 +1320,7 @@ form {
     transition: all 0.3s ease 0s;
     padding-top: 9.375rem;
     background: rgb(187, 181, 133);
+    z-index: 2;
   }
 
   .menu__body::before {
@@ -1333,6 +1334,7 @@ form {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    z-index: 2;
   }
 
   .menu-open .menu__body {
