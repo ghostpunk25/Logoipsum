@@ -1396,3 +1396,13 @@ form {
     text-align: center;
   }
 }
+
+@media (max-width: 29.99875em) {
+  .paragraph__container::after {
+    left: 45%;
+  }
+
+  .title__text::after {
+    left: 45%;
+  }
+}
