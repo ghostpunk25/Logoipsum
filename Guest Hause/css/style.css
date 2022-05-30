@@ -786,7 +786,7 @@ form {
   display: block;
   position: absolute;
   top: -2rem;
-  left: 48.6111111111%;
+  left: 45%;
 }
 
 .title-block__text {
@@ -926,6 +926,15 @@ form {
   background: #fff;
   color: #333333;
   cursor: pointer;
+}
+
+.reviews__slide:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .title-block__title_before {
@@ -1376,6 +1385,7 @@ form {
     -webkit-column-gap: 18.75rem;
        -moz-column-gap: 18.75rem;
             column-gap: 18.75rem;
+    row-gap: 0.625rem;
   }
 
   .spollers-footer__title {
