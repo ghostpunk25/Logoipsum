@@ -364,6 +364,12 @@ h6 {
   text-align: center;
 }
 
+@media (max-width: 25em) {
+  .mainpage__position {
+    max-width: 18.75rem;
+  }
+}
+
 @media (max-width: 71.25em) {
   .icon-menu {
     display: block;
