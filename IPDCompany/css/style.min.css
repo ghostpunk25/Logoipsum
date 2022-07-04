@@ -1551,6 +1551,12 @@ h6 {
    }
 }
 
+@media (max-width:96.875em) {
+   .mainpage__opacity {
+      background: url(../img/mainpage/flat.png) 115% 100% no-repeat, rgba(0, 0, 0, .7)
+   }
+}
+
 @media (max-width:89.375em) {
    .projects__arrow_prev {
       bottom: -4.375rem
@@ -1724,6 +1730,10 @@ h6 {
 }
 
 @media (max-width:61.99875em) {
+   .mainpage__opacity {
+      background: rgba(0, 0, 0, .7)
+   }
+
    @supports (font-size:clamp(2.1875rem, 0.3719697759rem + 9.0776511206vw, 6rem)) {
       .mainpage__title {
          font-size: clamp(2.1875rem, .3719697759rem + 9.0776511206vw, 6rem)
@@ -1734,6 +1744,10 @@ h6 {
       .mainpage__title {
          font-size: calc(2.1875rem + 3.8125 * (100vw - 20rem)/ 41.99875)
       }
+   }
+
+   .mainpage__button::after {
+      display: block
    }
 
    .strategy__body {
@@ -1759,6 +1773,22 @@ h6 {
       -ms-flex-pack: center;
       justify-content: center
    }
+
+   ._watcher-view .item-cooperation__image {
+      -webkit-animation: none;
+      animation: none
+   }
+
+   ._watcher-view .item-cooperation__text {
+      -webkit-animation: none;
+      animation: none
+   }
+
+   .item-cooperation__text {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1)
+   }
 }
 
 @media (max-width:47.99875em) {
@@ -1775,6 +1805,16 @@ h6 {
    }
 }
 
+@media (max-width:38.25em) {
+   .form__input {
+      width: 18.75rem
+   }
+
+   .form__button {
+      width: 18.75rem
+   }
+}
+
 @media (max-width:37.5em) {
    @supports (font-size:clamp(1.9375rem, 0.2232142857rem + 8.5714285714vw, 3.4375rem)) {
       .title {
@@ -1786,6 +1826,12 @@ h6 {
       .title {
          font-size: calc(1.9375rem + 1.5 * (100vw - 20rem)/ 17.5)
       }
+   }
+}
+
+@media (max-width:33.75em) {
+   .mainpage__button::after {
+      display: none
    }
 }
 
