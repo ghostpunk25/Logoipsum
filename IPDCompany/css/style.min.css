@@ -1581,7 +1581,7 @@ h6 {
    }
 }
 
-@media (max-width:71.25em) {
+@media (max-width:73.125em) {
    .icon-menu {
       display: block;
       position: relative;
@@ -1699,7 +1699,9 @@ h6 {
    .menu__sublist {
       padding: .9375rem 0 0
    }
+}
 
+@media (max-width:71.25em) {
    .mainpage__link {
       margin-right: 6.25rem
    }
