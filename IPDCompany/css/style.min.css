@@ -1450,11 +1450,6 @@ h6 {
 }
 
 @media (max-width:85em) {
-   ._watcher-view .tagline__text {
-      -webkit-animation: none;
-      animation: none
-   }
-
    .tagline__text {
       width: 100%;
       white-space: normal;
@@ -1570,6 +1565,13 @@ h6 {
 @media (max-width:86.25em) {
    .mainpage__button::after {
       display: none
+   }
+}
+
+@media (max-width:84.9375em) {
+   ._watcher-view .tagline__text {
+      -webkit-animation: none;
+      animation: none
    }
 }
 
