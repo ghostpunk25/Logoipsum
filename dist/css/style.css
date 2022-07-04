@@ -555,7 +555,7 @@ h6 {
 .tagline {
   font-weight: 700;
   font-size: 3rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(#021B13), color-stop(62.5%, #015038), to(#028B62));
   background: -o-linear-gradient(top, #021B13 0%, #015038 62.5%, #028B62 100%);
@@ -571,15 +571,15 @@ h6 {
 }
 
 .tagline__text {
-  width: 56ch;
+  width: 54ch;
   white-space: nowrap;
   border-right: 0.25rem solid orange;
   overflow: hidden;
 }
 
 ._watcher-view .tagline__text {
-  -webkit-animation: flash 0.75s step-end infinite, print 5s steps(56);
-          animation: flash 0.75s step-end infinite, print 5s steps(56);
+  -webkit-animation: flash 0.75s step-end infinite, print 5s steps(54);
+          animation: flash 0.75s step-end infinite, print 5s steps(54);
 }
 
 @-webkit-keyframes flash {
@@ -1462,17 +1462,6 @@ h6 {
   -ms-overflow-style: none;
 }
 
-@media (max-width: 85em) {
-  .tagline__text {
-    width: 100%;
-    white-space: normal;
-    -webkit-animation: none;
-            animation: none;
-    overflow: visible;
-    border-right: none;
-  }
-}
-
 @media (max-width: 48em) {
   .item-magazine {
     max-width: 100%;
@@ -1589,6 +1578,15 @@ h6 {
   ._watcher-view .tagline__text {
     -webkit-animation: none;
             animation: none;
+  }
+
+  .tagline__text {
+    width: 100%;
+    white-space: normal;
+    -webkit-animation: none;
+            animation: none;
+    overflow: visible;
+    border-right: none;
   }
 }
 
