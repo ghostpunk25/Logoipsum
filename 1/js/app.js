@@ -3035,7 +3035,7 @@
     }
     (() => {
         "use strict";
-        const flsModules = {};
+        const modules_flsModules = {};
         function isWebp() {
             function testWebP(callback) {
                 let webP = new Image;
@@ -3164,44 +3164,11 @@
                 }
             }));
         }
-        function menuClose() {
-            bodyUnlock();
-            document.documentElement.classList.remove("menu-open");
-        }
-        function FLS(message) {
+        function functions_FLS(message) {
             setTimeout((() => {
                 if (window.FLS) console.log(message);
             }), 0);
         }
-        let gotoblock_gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) => {
-            const targetBlockElement = document.querySelector(targetBlock);
-            if (targetBlockElement) {
-                let headerItem = "";
-                let headerItemHeight = 0;
-                if (noHeader) {
-                    headerItem = "header.header";
-                    headerItemHeight = document.querySelector(headerItem).offsetHeight;
-                }
-                let options = {
-                    speedAsDuration: true,
-                    speed,
-                    header: headerItem,
-                    offset: offsetTop,
-                    easing: "easeOutQuad"
-                };
-                document.documentElement.classList.contains("menu-open") ? menuClose() : null;
-                if ("undefined" !== typeof SmoothScroll) (new SmoothScroll).animateScroll(targetBlockElement, "", options); else {
-                    let targetBlockElementPosition = targetBlockElement.getBoundingClientRect().top + scrollY;
-                    targetBlockElementPosition = headerItemHeight ? targetBlockElementPosition - headerItemHeight : targetBlockElementPosition;
-                    targetBlockElementPosition = offsetTop ? targetBlockElementPosition - offsetTop : targetBlockElementPosition;
-                    window.scrollTo({
-                        top: targetBlockElementPosition,
-                        behavior: "smooth"
-                    });
-                }
-                FLS(`[gotoBlock]: Юхуу...едем к ${targetBlock}`);
-            } else FLS(`[gotoBlock]: Ой ой..Такого блока нет на странице: ${targetBlock}`);
-        };
         function formFieldsInit(options = {
             viewPass: false
         }) {
@@ -3293,11 +3260,11 @@
                         const checkbox = checkboxes[index];
                         checkbox.checked = false;
                     }
-                    if (flsModules.select) {
+                    if (modules_flsModules.select) {
                         let selects = form.querySelectorAll(".select");
                         if (selects.length) for (let index = 0; index < selects.length; index++) {
                             const select = selects[index].querySelector("select");
-                            flsModules.select.selectBuild(select);
+                            modules_flsModules.select.selectBuild(select);
                         }
                     }
                 }), 0);
@@ -3306,71 +3273,6 @@
                 return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(formRequiredItem.value);
             }
         };
-        function formSubmit(options = {
-            validate: true
-        }) {
-            const forms = document.forms;
-            if (forms.length) for (const form of forms) {
-                form.addEventListener("submit", (function(e) {
-                    const form = e.target;
-                    formSubmitAction(form, e);
-                }));
-                form.addEventListener("reset", (function(e) {
-                    const form = e.target;
-                    formValidate.formClean(form);
-                }));
-            }
-            async function formSubmitAction(form, e) {
-                const error = !form.hasAttribute("data-no-validate") ? formValidate.getErrors(form) : 0;
-                if (0 === error) {
-                    const ajax = form.hasAttribute("data-ajax");
-                    if (ajax) {
-                        e.preventDefault();
-                        const formAction = form.getAttribute("action") ? form.getAttribute("action").trim() : "#";
-                        const formMethod = form.getAttribute("method") ? form.getAttribute("method").trim() : "GET";
-                        const formData = new FormData(form);
-                        form.classList.add("_sending");
-                        const response = await fetch(formAction, {
-                            method: formMethod,
-                            body: formData
-                        });
-                        if (response.ok) {
-                            await response.json();
-                            form.classList.remove("_sending");
-                            formSent(form);
-                        } else {
-                            alert("Ошибка");
-                            form.classList.remove("_sending");
-                        }
-                    } else if (form.hasAttribute("data-dev")) {
-                        e.preventDefault();
-                        formSent(form);
-                    }
-                } else {
-                    e.preventDefault();
-                    const formError = form.querySelector("._form-error");
-                    if (formError && form.hasAttribute("data-goto-error")) gotoblock_gotoBlock(formError, true, 1e3);
-                }
-            }
-            function formSent(form) {
-                document.dispatchEvent(new CustomEvent("formSent", {
-                    detail: {
-                        form
-                    }
-                }));
-                setTimeout((() => {
-                    if (flsModules.popup) {
-                        const popup = form.dataset.popupMessage;
-                        popup ? flsModules.popup.open(popup) : null;
-                    }
-                }), 0);
-                formValidate.formClean(form);
-                formLogging(`Форма отправлена!`);
-            }
-            function formLogging(message) {
-                FLS(`[Формы]: ${message}`);
-            }
-        }
         class SelectConstructor {
             constructor(props, data = null) {
                 let defaultConfig = {
@@ -3681,13 +3583,13 @@
                 }));
             }
             setLogging(message) {
-                this.config.logging ? FLS(`[select]: ${message}`) : null;
+                this.config.logging ? functions_FLS(`[select]: ${message}`) : null;
             }
         }
-        flsModules.select = new SelectConstructor({});
+        modules_flsModules.select = new SelectConstructor({});
         __webpack_require__(125);
         const inputMasks = document.querySelectorAll('input[type="tel"]');
-        if (inputMasks.length) flsModules.inputmask = Inputmask("+8 (999) 999-99-99").mask(inputMasks);
+        if (inputMasks.length) modules_flsModules.inputmask = Inputmask("+8 (999) 999-99-99").mask(inputMasks);
         let addWindowScrollEvent = false;
         setTimeout((() => {
             if (addWindowScrollEvent) {
@@ -3793,12 +3695,89 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
+        "use strict";
+        document.addEventListener("DOMContentLoaded", (function() {
+            const form = document.getElementById("form");
+            form.addEventListener("submit", formSend);
+            async function formSend(e) {
+                e.preventDefault();
+                let error = formValidate(form);
+                let formData = new FormData(form);
+                formData.append("image", formImage.files[0]);
+                if (0 === error) {
+                    form.classList.add("_sending");
+                    let response = await fetch("sendmail.php", {
+                        method: "POST",
+                        body: formData
+                    });
+                    if (response.ok) {
+                        let result = await response.json();
+                        alert(result.message);
+                        formPreview.innerHTML = "";
+                        form.reset();
+                        form.classList.remove("_sending");
+                    } else {
+                        alert("Ошибка");
+                        form.classList.remove("_sending");
+                    }
+                } else alert("Заполните обязательные поля");
+            }
+            function formValidate(form) {
+                let error = 0;
+                let formReq = document.querySelectorAll("._req");
+                for (let index = 0; index < formReq.length; index++) {
+                    const index = fotmReq[index];
+                    formRemoveError(input);
+                    if (input.classList.contains("_email")) {
+                        if (emailTest(input)) error++;
+                    } else if ("checkbox" === input.getAttribute("type") && false === input.checked) {
+                        formAddError(input);
+                        error++;
+                    } else if ("" === input.value) {
+                        formAddError(input);
+                        error++;
+                    }
+                }
+                return error;
+            }
+            function formAddError(input) {
+                input.parentElement.classList.add("_error");
+                input.classList.add("_error");
+            }
+            function formAddError(input) {
+                input.parentElement.classList.remove("_error");
+                input.classList.remove("_error");
+            }
+            function emailTest(input) {
+                return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+            }
+            const formImage = document.getElementById("formImage");
+            const formPreview = document.getElementById("formPreview");
+            formImage.addEventListener("change", (() => {
+                uploadFile(formImage.files[0]);
+            }));
+            function uploadFile(file) {
+                if (![ "image/jpeg", "image/png", "image/gif" ].includes(file.type)) {
+                    alert("Разрешены только изображения.");
+                    formImage.value = "";
+                    return;
+                }
+                if (file.size > 2 * 1024 * 1024) {
+                    alert("Файл должен быть менее 2 Мб.");
+                    return;
+                }
+                var reader = new FileReader;
+                reader.onload = function(e) {
+                    formPreview.innerHTML = '<img src="${e.target.result}" alt="Фото">';
+                };
+                reader.readAsDataURL(file);
+            }
+        }));
         window["FLS"] = true;
         isWebp();
         menuInit();
         formFieldsInit({
             viewPass: false
         });
-        formSubmit();
     })();
 })();

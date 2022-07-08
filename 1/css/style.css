@@ -284,12 +284,10 @@ h6 {
   display: none;
 }
 
-.no-webp .header{
-  background: url("../img/Header/bg.jpg") center/cover no-repeat; }
-
 .header {
   min-height: 100vh;
   padding-top: 1.875rem;
+  background: url("../img/Header/bg.jpg") center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -988,5 +986,3 @@ h6 {
     background: #282828;
   }
 }
-
-.webp .header{ background: url(../img/Header/bg.webp) center/cover no-repeat; }
