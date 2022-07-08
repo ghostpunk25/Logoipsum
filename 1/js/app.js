@@ -3726,10 +3726,13 @@
                 let error = 0;
                 let formReq = document.querySelectorAll("._req");
                 for (let index = 0; index < formReq.length; index++) {
-                    const index = fotmReq[index];
+                    const input = fotmReq[index];
                     formRemoveError(input);
                     if (input.classList.contains("_email")) {
-                        if (emailTest(input)) error++;
+                        if (emailTest(input)) {
+                            formAddError(input);
+                            error++;
+                        }
                     } else if ("checkbox" === input.getAttribute("type") && false === input.checked) {
                         formAddError(input);
                         error++;
@@ -3744,7 +3747,7 @@
                 input.parentElement.classList.add("_error");
                 input.classList.add("_error");
             }
-            function formAddError(input) {
+            function formRemoveError(input) {
                 input.parentElement.classList.remove("_error");
                 input.classList.remove("_error");
             }
@@ -3769,6 +3772,9 @@
                 var reader = new FileReader;
                 reader.onload = function(e) {
                     formPreview.innerHTML = '<img src="${e.target.result}" alt="Фото">';
+                };
+                reader.onerror = function(e) {
+                    alert("Ошибка");
                 };
                 reader.readAsDataURL(file);
             }
