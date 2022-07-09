@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220709104723">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220709105307">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -109,10 +109,10 @@
 							hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. </p>
 						<form data-ajax class="record__form form" method="POST" action="sendmail.php">
 							<div class="record__block">
-								<input autocomplete="off" type="text" name="name" data-error="Ошибка" placeholder="Имя" class="record__input">
-								<input autocomplete="off" type="tel" name="tel" data-error="Ошибка" placeholder="Телефон" class="record__input">
+								<input autocomplete="off" type="text" name="form['name']" data-error="Ошибка" placeholder="Имя" class="record__input">
+								<input autocomplete="off" type="tel" name="form['tel']" data-error="Ошибка" placeholder="Телефон" class="record__input">
 							</div>
-							<select name="address" class="record__select">
+							<select name="form['address']" class="record__select">
 								<option value="1" selected>Бутик на Невском 103</option>
 								<option value="2">Бутик на Невском 88</option>
 								<option value="3">Бутик на Невском 10</option>
@@ -165,7 +165,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220709104723"></script>
+	<script src="js/app.min.js?_v=20220709105307"></script>
 </body>
 
 </html>
