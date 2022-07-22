@@ -1,76 +1,54 @@
 <?php
+	use PHPMailer\PHPMailer\PHPMailer;
+	use PHPMailer\PHPMailer\Exception;
 
 	require 'phpmailer/src/Exception.php';
 	require 'phpmailer/src/PHPMailer.php';
-	require 'phpmailer/src/SMTP';
 
-	$title = "Тема письма";
-	$file = $_FILES['file'];
+	$mail = new PHPMailer(true);
+	$mail->CharSet = 'UTF-8';
+	$mail->setLanguage('ru', 'phpmailer/language/');
+	$mail->IsHTML(true);
 
-	$c = true;
-	//
-	$title = "Заголовок письма";
-	foreach ( $_POST as $key => $value ){
-		if ($value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject"){
-			&body .= "
-			" . (($c = !$c) ? '<tr>':'<tr style="background-color:#f8f8f8;">') . "
-			<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
-			<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$value</b></td>
-			</tr>
-			";
+	//От кого письмо
+	$mail->setFrom('mdurov25@gmail.com', 'Фрилансер по жизни');
+	//Кому отправить
+	$mail->addAddress('ghostpunk25@gmail.com');
+	//Тема письма
+	$mail->Subject = 'Привет! Это "Фрилансер по жизни"';
+
+	//Тело письма
+	$body = '<h1>Встречайте супер письмо!</h1>';
+
+	//if(trim(!empty($_POST['name']))){
+		//$body.='';
+	//}	
+	
+	/*
+	//Прикрепить файл
+	if (!empty($_FILES['image']['tmp_name'])) {
+		//путь загрузки файла
+		$filePath = __DIR__ . "/files/sendmail/attachments/" . $_FILES['image']['name']; 
+		//грузим файл
+		if (copy($_FILES['image']['tmp_name'], $filePath)){
+			$fileAttach = $filePath;
+			$body.='<p><strong>Фото в приложении</strong>';
+			$mail->addAttachment($fileAttach);
 		}
 	}
+	*/
 
-	$body = "<table style='width: 100%;'>$body</table>";
+	$mail->Body = $body;
 
-	// Настройка PHPMailer
-	$mail = new PHPMailer\PHPMailer\PHPMailer();
-
-	try {
-		$mail->isSMTP();
-		$mail->CharSet = "UTF-8";
-		$mail->SMTPAuth   = true;
-	
-	  // Настройки почты
-	  $mail->Host 			= 'smtp.gmail.com'; // SMTP сервера вашей почты
-	  $mail->Username		= 'ghostpunk25@gmail.com'; // Логин на почте
-	  $mail->Password 	= 'uvslnjvqzmkbotog'; // Пароль на почте
-	  $mail->SMTPSecure	= 'ssl';
-	  $mail->Port 			= 465;
-
-
-
-	  $mail->setForm('ghostpunk25@gmail.com', 'Заявка с вашего сайта'); // Адрес почты и имя отправителя
-
-
-	  // Получатели письма
-	  $mail->addAddress('mdurov25@gmail.com')
-
-
-	  // Загрузка файла
-	//   if (!empty($file['name'][0])) {
-	// 	for ($ct = 0; $ct < count($file['tmp_name']); $ct++){
-	// 		$uploadfile = tempnam(sys_get_temp_dir(), sha1($file['name'][$ct]));
-	// 		$filename = $file['name'][$ct];
-	// 		if (move_uploaded_file($file['tmp_name'][$ct], $uploadfile)) {
-	// 		$mail->addAttachment($uploadfile, $filename);
-	// 		$rfile[] = "Файл $filename прикреплен";
-	// 		} else {
-	// 			$rfile[] = "Не удалось прикрепить файл $filename";
-	// 		}
-	// 	}
-	//   }
-
-
-	  // Отправка сообщения
-	  $mail->isHTML(true);
-	  $mail->Subject = $title;
-	  $mail->Body = $body;
-
-	  $mail->send();
-	
-	}  catch (Exception &e) {
-		$status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+	//Отправляем
+	if (!$mail->send()) {
+		$message = 'Ошибка';
+	} else {
+		$message = 'Данные отправлены!';
 	}
 
+	$response = ['message' => $message];
+
+	header('Content-type: application/json');
+	echo json_encode($response);
 ?>
