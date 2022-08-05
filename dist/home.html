@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220804220709">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220805170433">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +14,17 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll data-scroll-show class="header">
 			<div class="header__container">
 				<a href="#" class="header__logo"><img src="" alt="" class="header__icon">???</a>
 				<div class="header__menu menu">
 					<button data-da=".header__block,991.98,1" type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Головна</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Відгуки</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
+							<li class="menu__item"><a data-goto=".mainpage" href="#" class="menu__link">Головна</a></li>
+							<li class="menu__item"><a data-goto=".reviews" href="#" class="menu__link">Відгуки</a></li>
+							<li class="menu__item"><a data-goto=".contacts" href="#" class="menu__link">Контакти</a></li>
+							<li class="menu__item"><a data-goto=".about-us" href="#" class="menu__link">Про нас</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -39,7 +39,7 @@
 					<div class="mainpage__block">
 						<div class="mainpage__phone phone-mainpage">
 							<p class="phone-mainpage__text">Подзвоніть нам:</p>
-							<a href="tel:+380916157722" class="phone-mainpage__numer">+38(091)61-57-722</a>
+							<a href="tel:+380916157722" class="phone-mainpage__numer">+38(091)615-77-22</a>
 						</div>
 						<div class="mainpage__mail mail-mainpage">
 							<p class="mail-mainpage__text">Telegram:</p>
@@ -55,7 +55,7 @@
 								юридичні завдання швидко та ефективно.</p>
 							<a data-popup="#googleform" href="#" class="body-mainpage__button btn">Замовити консультацію</a>
 						</div>
-						<div class="mainpage__picture"><img src="img/mainpage/decor.png" alt="decor" class="mainpage__image">
+						<div data-prlx-mouse class="mainpage__picture"><img src="img/mainpage/decor.png" alt="decor" class="mainpage__image">
 						</div>
 					</div>
 				</div>
@@ -64,10 +64,10 @@
 				<div class="services__container">
 					<div class="services__block">
 						<div class="services__picture">
-							<img src="img/services/hammer.jpg" alt="hammer" class="services__image">
+							<img data-prlx-mouse data-prlx-cx="500" data-prlx-cy="500" src="img/services/hammer.jpg" alt="hammer" class="services__image">
 						</div>
 						<div class="services__picture">
-							<img src="img/services/books.jpg" alt="books" class="services__image">
+							<img data-prlx-mouse data-prlx-cx="500" data-prlx-cy="500" src="img/services/books.jpg" alt="books" class="services__image">
 						</div>
 					</div>
 					<div class="services__body">
@@ -93,9 +93,219 @@
 					</div>
 				</div>
 			</section>
+			<div class="fix-block"></div>
+			<section class="specialization">
+				<div class="specialization__container">
+					<h2 class="specialization__title title">Наша специалізація</h2>
+					<div class="specialization__items">
+						<article data-watch data-watch-once class="specialization__item item-specialization">
+							<div class="item-specialization__picture"><img src="img/specialization/briefcase.svg" alt="briefcase" class="item-specialization__icon"></div>
+							<h4 class="item-specialization__title">Кредитне та банківське право</h4>
+							<p class="item-specialization__text">Вирішуємо проблеми з кредитами та колекторами. Надання
+								юридичних послуг позичальникам банків (МФО) з підстави несплати кредитних зобов'язань та
+								вкладникам банків при
+								поверненні їм вкладів</p>
+						</article>
+						<article data-watch data-watch-once class="specialization__item item-specialization">
+							<div class="item-specialization__picture"><img src="img/specialization/family.svg" alt="family" class="item-specialization__icon"></div>
+							<h4 class="item-specialization__title">Сімейне право</h4>
+							<p class="item-specialization__text">Правова допомога на випадок розірвання шлюбу, стягнення
+								аліментів, розподіл майна подружжя, визначення місця проживання дитини та інше</p>
+						</article>
+						<article data-watch data-watch-once class="specialization__item item-specialization">
+							<div class="item-specialization__picture"><img src="img/specialization/car.svg" alt="car" class="item-specialization__icon"></div>
+							<h4 class="item-specialization__title">ДТП</h4>
+							<p class="item-specialization__text">Надання юридичних послуг водіям транспортних засобів при
+								дорожньо-транспортних пригодах, потерпілим від ДТП, а також надання супутньої правової допомоги,
+								пов'язаної з експлуатацією автомобіля</p>
+						</article>
+						<article data-watch data-watch-once class="specialization__item item-specialization">
+							<div class="item-specialization__picture"><img src="img/specialization/briefcase.svg" alt="briefcase" class="item-specialization__icon"></div>
+							<h4 class="item-specialization__title">Трудове право</h4>
+							<p class="item-specialization__text">Захищаємо права працівників в спорах з роботодавцем</p>
+						</article>
+						<article data-watch data-watch-once class="specialization__item item-specialization">
+							<div class="item-specialization__picture"><img src="img/specialization/car.svg" alt="car" class="item-specialization__icon"></div>
+							<h4 class="item-specialization__title">Міграційне право та право воєнного часу</h4>
+							<p class="item-specialization__text">Надання консультацій з питань перетину кордону, оформлення
+								статусу біженця, та щодо законодавства України про мобілізацію під час війни</p>
+						</article>
+						<article data-watch data-watch-once class="specialization__item item-specialization">
+							<div class="item-specialization__picture"><img src="img/specialization/design.svg" alt="design" class="item-specialization__icon"></div>
+							<h4 class="item-specialization__title">Господарське право</h4>
+							<p class="item-specialization__text">Надання юридичних послуг суб'єктам господарської діяльності,
+								юридичний аутсорсинг</p>
+						</article>
+						<article data-watch data-watch-once class="specialization__item item-specialization">
+							<div class="item-specialization__picture"><img src="img/specialization/handcuffs.svg" alt="handcuffs" class="item-specialization__icon"></div>
+							<h4 class="item-specialization__title">Кримінальне право</h4>
+							<p class="item-specialization__text">Захист підозрюваних, обвинувачених та потерпілих у
+								кримінальних справах</p>
+						</article>
+						<article data-watch data-watch-once class="specialization__item item-specialization">
+							<div class="item-specialization__picture"><img src="img/specialization/design.svg" alt="design" class="item-specialization__icon"></div>
+							<h4 class="item-specialization__title">Нерухомість</h4>
+							<p class="item-specialization__text">Продаж нерухомого майна, проблеми з документами, відустність
+								прав на землю. Оформлення, реєстрації, узаконення, оспорювання нерухомості,
+								перевірка чистоти правочину, судові процеси за нерухомість</p>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title title">Відгуки</h2>
+					<div class="reviews__slider swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide swiper-slide">
+								<div class="swiper-slide__item">
+									<div class="swiper-slide__block">
+										<div class="swiper-slide__picture-ibg"><img src="img/reviews/profile.png" alt="icon" class="swiper-slide__image"></div>
+									</div>
+									<div class="swiper-slide__paragraph">
+										<p class="swiper-slide__name">Писар Катерина</p>
+										<p class="swiper-slide__data">20.06.2022</p>
+									</div>
+								</div>
+								<div class="swiper-slide__body">
+									<p class="swiper-slide__text">Грамотные адвокаты. Обращалась за консультацией по судебному
+										вопросу. Сделали всё профессионально, как надо. Расценки на услуги адекватные, при том что
+										получаешь настоящего юриста</p>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<p class="swiper-slide__text">Оформлял юридическую помощь в данной компании в связи с
+										переездом в другую страну на пмж. Ребята знают свою работу, помогли мне как положено.</p>
+								</div>
+								<div class="swiper-slide__item">
+									<div class="swiper-slide__block">
+										<div class="swiper-slide__picture-ibg"><img src="img/reviews/profile.png" alt="icon" class="swiper-slide__image"></div>
+									</div>
+									<div class="swiper-slide__paragraph">
+										<p class="swiper-slide__name">Ващук Андрій</p>
+										<p class="swiper-slide__data">03.02.2022</p>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="swiper-slide__item">
+									<div class="swiper-slide__block">
+										<div class="swiper-slide__picture-ibg"><img src="img/reviews/profile.png" alt="icon" class="swiper-slide__image"></div>
+									</div>
+									<div class="swiper-slide__paragraph">
+										<p class="swiper-slide__name">Писар Катерина</p>
+										<p class="swiper-slide__data">20.06.2022</p>
+									</div>
+								</div>
+								<div class="swiper-slide__body">
+									<p class="swiper-slide__text">Грамотные адвокаты. Обращалась за консультацией по судебному
+										вопросу. Сделали всё профессионально, как надо. Расценки на услуги адекватные, при том что
+										получаешь настоящего юриста</p>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="swiper-slide__body">
+									<p class="swiper-slide__text">Оформлял юридическую помощь в данной компании в связи с
+										переездом в другую страну на пмж. Ребята знают свою работу, помогли мне как положено.</p>
+								</div>
+								<div class="swiper-slide__item">
+									<div class="swiper-slide__block">
+										<div class="swiper-slide__picture-ibg"><img src="img/reviews/profile.png" alt="icon" class="swiper-slide__image"></div>
+									</div>
+									<div class="swiper-slide__paragraph">
+										<p class="swiper-slide__name">Ващук Андрій</p>
+										<p class="swiper-slide__data">03.02.2022</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<a href="#" class="reviews__button btn">Залишити відгук</a>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__block">
+						<h2 class="contacts__title title">Зателефонуйте або напишіть нам</h2>
+						<p class="contacts__subtitle">Контакти компанії</p>
+					</div>
+					<div class="contacts__body">
+						<div class="contacts__items">
+							<div class="contacts__item item-contacts">
+								<div class="item-contacts__image">
+									<a href="tel:+380916157722" class="item-contacts__picture-ibg"><img src="img/contacts/phone.svg" alt="phone" class="item-contacts__icon"></a>
+								</div>
+								<div class="item-contacts__block">
+									<p class="item-contacts__text">Мобільній:</p>
+									<a href="tel:+380916157722" class="item-contacts__numer">+38(091)615-77-22</a>
+								</div>
+							</div>
+							<div class="contacts__item item-contacts">
+								<div class="item-contacts__image">
+									<a href="#" class="item-contacts__picture-ibg"><img src="img/contacts/mail.png" alt="email" class="item-contacts__icon"></a>
+								</div>
+								<div class="item-contacts__block">
+									<p class="item-contacts__text">E-mail:</p>
+									<a href="#" class="item-contacts__numer">lawprotector@gmail.com</a>
+								</div>
+							</div>
+							<div class="contacts__item item-contacts">
+								<div class="item-contacts__image">
+									<a href="#" class="item-contacts__picture-ibg"><img src="img/contacts/Instagram.svg" alt="viber" class="item-contacts__icon"></a>
+								</div>
+								<div class="item-contacts__block">
+									<p class="item-contacts__text">Instagram:</p>
+									<a href="#" class="item-contacts__numer">@law.protector</a>
+								</div>
+							</div>
+							<div class="contacts__item item-contacts">
+								<div class="item-contacts__image">
+									<a href="#" class="item-contacts__picture-ibg"><img src="img/contacts/telegram.png" alt="Telegram" class="item-contacts__icon"></a>
+								</div>
+								<div class="item-contacts__block">
+									<p class="item-contacts__text">Telegram:</p>
+									<a href="#" class="item-contacts__numer">@law.protector</a>
+								</div>
+							</div>
+							<div class="contacts__item item-contacts">
+								<div class="item-contacts__image">
+									<a href="#" class="item-contacts__picture-ibg"><img src="img/contacts/viber.png" alt="viber" class="item-contacts__icon"></a>
+								</div>
+								<div class="item-contacts__block">
+									<p class="item-contacts__text">Viber:</p>
+									<a href="#" class="item-contacts__numer">+38(091)615-77-22</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="insert"></div>
+			<section class="about-us">
+				<div class="about-us__container">
+					<h2 class="about-us__title title">Про нас</h2>
+					<h2 class="about-us__text">Про насПро насПро насПро насПро насПро насПро насПро насПро насПро насПро
+						насПро насПро насПро насПро насПро насПро насПро насПро насПро насПро насПро насПро насПро насПро
+						насПро нас</h2>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__body">
+					<a href="#" class="footer__logo"><img src="" alt="" class="footer__icon">???</a>
+					<div class="footer__item">
+						<p class="footer__text">Підписатись:</p>
+						<a href="#" class="footer__picture"><img src="img/footer/instagram.svg" alt="instagram" class="footer__icon"></a>
+						<a href="#" class="footer__picture"><img src="img/footer/facebook.svg" alt="facebook" class="footer__icon"></a>
+					</div>
+				</div>
+				<div class="footre__block block-footre">
+					<p class="block-footre__text">Всі права захищені. Використання матеріалів даного сайту можливе тільки з
+						посиланням на джерело. Copyright © ???</p>
+				</div>
 			</div>
 		</footer>
 	</div>
@@ -108,7 +318,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220804220709"></script>
+	<script src="js/app.min.js?_v=20220805170433"></script>
 </body>
 
 </html>
