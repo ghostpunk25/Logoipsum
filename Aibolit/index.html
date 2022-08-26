@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220825224955">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220826200134">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +18,7 @@
 			<div class="header__container_extrawild">
 				<a href="#" class="header__picture"><img src="img/header/logo.svg" alt="logo" class="header__logo"></a>
 				<div class="header__menu menu">
-					<button data-da=".header__block,991.98,1" type="button"
-						class="menu__icon icon-menu"><span></span></button>
+					<button data-da=".header__block,991.98,2" type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item"><a href="#" class="menu__link">ЛИЧНЫЙ КАБИНЕТ</a></li>
@@ -37,7 +36,7 @@
 					</nav>
 				</div>
 				<div class="header__block">
-					<a href="#" class="header__position">ВОЛГОГРАД</a>
+					<a id="1" data-popup='#popup' href="#" class="header__position">ВОЛГОГРАД</a>
 				</div>
 			</div>
 		</header>
@@ -64,12 +63,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="mainslider__picture">
-								<picture>
-									<source srcset="img/mainslider/dog&cat.webp" type="image/webp"><img
-										src="img/mainslider/dog&cat.jpg" alt="dog&cat" class="mainslider__image">
-								</picture>
-							</div>
+							<div class="mainslider__picture"><picture><source srcset="img/mainslider/dog&cat.webp" type="image/webp"><img src="img/mainslider/dog&cat.jpg" alt="dog&cat" class="mainslider__image"></picture></div>
 						</div>
 						<div class="mainslider__slide swiper-slide">
 							<div class="mainslider__body">
@@ -92,12 +86,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="mainslider__picture">
-								<picture>
-									<source srcset="img/mainslider/man&dog.webp" type="image/webp"><img
-										src="img/mainslider/man&dog.jpg" alt="dog&cat" class="mainslider__image">
-								</picture>
-							</div>
+							<div class="mainslider__picture"><picture><source srcset="img/mainslider/man&dog.webp" type="image/webp"><img src="img/mainslider/man&dog.jpg" alt="dog&cat" class="mainslider__image"></picture></div>
 						</div>
 						<div class="mainslider__slide swiper-slide">
 							<div class="mainslider__body">
@@ -120,12 +109,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="mainslider__picture">
-								<picture>
-									<source srcset="img/mainslider/dog.webp" type="image/webp"><img src="img/mainslider/dog.jpg"
-										alt="dog&cat" class="mainslider__image">
-								</picture>
-							</div>
+							<div class="mainslider__picture"><picture><source srcset="img/mainslider/dog.webp" type="image/webp"><img src="img/mainslider/dog.jpg" alt="dog&cat" class="mainslider__image"></picture></div>
 						</div>
 						<div class="mainslider__slide swiper-slide">
 							<div class="mainslider__body">
@@ -148,12 +132,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="mainslider__picture">
-								<picture>
-									<source srcset="img/mainslider/bunny.webp" type="image/webp"><img
-										src="img/mainslider/bunny.jpg" alt="dog&cat" class="mainslider__image">
-								</picture>
-							</div>
+							<div class="mainslider__picture"><picture><source srcset="img/mainslider/bunny.webp" type="image/webp"><img src="img/mainslider/bunny.jpg" alt="dog&cat" class="mainslider__image"></picture></div>
 						</div>
 						<div class="mainslider__slide swiper-slide">
 							<div class="mainslider__body">
@@ -176,12 +155,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="mainslider__picture">
-								<picture>
-									<source srcset="img/mainslider/cat.webp" type="image/webp"><img src="img/mainslider/cat.jpg"
-										alt="dog&cat" class="mainslider__image">
-								</picture>
-							</div>
+							<div class="mainslider__picture"><picture><source srcset="img/mainslider/cat.webp" type="image/webp"><img src="img/mainslider/cat.jpg" alt="dog&cat" class="mainslider__image"></picture></div>
 						</div>
 						<div class="mainslider__slide swiper-slide">
 							<div class="mainslider__body">
@@ -204,12 +178,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="mainslider__picture">
-								<picture>
-									<source srcset="img/mainslider/dogs.webp" type="image/webp"><img
-										src="img/mainslider/dogs.jpg" alt="dog&cat" class="mainslider__image">
-								</picture>
-							</div>
+							<div class="mainslider__picture"><picture><source srcset="img/mainslider/dogs.webp" type="image/webp"><img src="img/mainslider/dogs.jpg" alt="dog&cat" class="mainslider__image"></picture></div>
 						</div>
 					</div>
 					<div class="swiper-pagination"></div>
@@ -379,53 +348,21 @@
 					<div class="our-specialists__body">
 						<div class="our-specialists__slider swiper">
 							<div class="our-specialists__wrapper swiper-wrapper">
-								<div class="our-specialists__slide swiper-slide"><a href="#" class="our-specialists__link">
-										<picture>
-											<source srcset="img/our-specialists/slide_1.webp" type="image/webp"><img
-												src="img/our-specialists/slide_1.jpg" alt="photo" class="our-specialists__image">
-										</picture>
-									</a>
+								<div class="our-specialists__slide swiper-slide"><a href="#" class="our-specialists__link"><picture><source srcset="img/our-specialists/slide_1.webp" type="image/webp"><img src="img/our-specialists/slide_1.jpg" alt="photo" class="our-specialists__image"></picture></a>
 								</div>
-								<div class="our-specialists__slide swiper-slide"><a href="#" class="our-specialists__link">
-										<picture>
-											<source srcset="img/our-specialists/slide_2.webp" type="image/webp"><img
-												src="img/our-specialists/slide_2.jpg" alt="photo" class="our-specialists__image">
-										</picture>
-									</a>
+								<div class="our-specialists__slide swiper-slide"><a href="#" class="our-specialists__link"><picture><source srcset="img/our-specialists/slide_2.webp" type="image/webp"><img src="img/our-specialists/slide_2.jpg" alt="photo" class="our-specialists__image"></picture></a>
 								</div>
-								<div class="our-specialists__slide swiper-slide"><a href="#" class="our-specialists__link">
-										<picture>
-											<source srcset="img/our-specialists/slide_1.webp" type="image/webp"><img
-												src="img/our-specialists/slide_1.jpg" alt="photo" class="our-specialists__image">
-										</picture>
-									</a>
+								<div class="our-specialists__slide swiper-slide"><a href="#" class="our-specialists__link"><picture><source srcset="img/our-specialists/slide_1.webp" type="image/webp"><img src="img/our-specialists/slide_1.jpg" alt="photo" class="our-specialists__image"></picture></a>
 								</div>
-								<div class="our-specialists__slide swiper-slide"><a href="#" class="our-specialists__link">
-										<picture>
-											<source srcset="img/our-specialists/slide_3.webp" type="image/webp"><img
-												src="img/our-specialists/slide_3.jpg" alt="photo" class="our-specialists__image">
-										</picture>
-									</a>
+								<div class="our-specialists__slide swiper-slide"><a href="#" class="our-specialists__link"><picture><source srcset="img/our-specialists/slide_3.webp" type="image/webp"><img src="img/our-specialists/slide_3.jpg" alt="photo" class="our-specialists__image"></picture></a>
 								</div>
-								<div class="our-specialists__slide swiper-slide"><a href="#" class="our-specialists__link">
-										<picture>
-											<source srcset="img/our-specialists/slide_2.webp" type="image/webp"><img
-												src="img/our-specialists/slide_2.jpg" alt="photo" class="our-specialists__image">
-										</picture>
-									</a>
+								<div class="our-specialists__slide swiper-slide"><a href="#" class="our-specialists__link"><picture><source srcset="img/our-specialists/slide_2.webp" type="image/webp"><img src="img/our-specialists/slide_2.jpg" alt="photo" class="our-specialists__image"></picture></a>
 								</div>
-								<div class="our-specialists__slide swiper-slide"><a href="#" class="our-specialists__link">
-										<picture>
-											<source srcset="img/our-specialists/slide_1.webp" type="image/webp"><img
-												src="img/our-specialists/slide_1.jpg" alt="photo" class="our-specialists__image">
-										</picture>
-									</a>
+								<div class="our-specialists__slide swiper-slide"><a href="#" class="our-specialists__link"><picture><source srcset="img/our-specialists/slide_1.webp" type="image/webp"><img src="img/our-specialists/slide_1.jpg" alt="photo" class="our-specialists__image"></picture></a>
 								</div>
 							</div>
-							<button type="button" class="our-specialists__prev swiper-button-prev"><img
-									src="img/our-specialists/arrow.svg" alt="arrow" class="our-specialists__arrow"></button>
-							<button type="button" class="our-specialists__next swiper-button-next"><img
-									src="img/our-specialists/arrow.svg" alt="arrow" class="our-specialists__arrow"></button>
+							<button type="button" class="our-specialists__prev swiper-button-prev"><img src="img/our-specialists/arrow.svg" alt="arrow" class="our-specialists__arrow"></button>
+							<button type="button" class="our-specialists__next swiper-button-next"><img src="img/our-specialists/arrow.svg" alt="arrow" class="our-specialists__arrow"></button>
 						</div>
 					</div>
 					<div class="our-specialists__controll">
@@ -448,8 +385,7 @@
 						<article class="why-are-we__item item-why-are-we">
 							<h4 class="item-why-are-we__title">Работаем круглосуточно</h4>
 							<div class="item-why-are-we__body">
-								<div class="item-why-are-we__picture"><img src="img/why-are-we/24_7.svg" alt="24/7"
-										class="item-why-are-we__image"></div>
+								<div class="item-why-are-we__picture"><img src="img/why-are-we/24_7.svg" alt="24/7" class="item-why-are-we__image"></div>
 								<p class="item-why-are-we__text">Мы готовы в любое время суток принять домашних питомцев и их
 									хозяев</p>
 							</div>
@@ -457,8 +393,7 @@
 						<article class="why-are-we__item item-why-are-we">
 							<h4 class="item-why-are-we__title">Широкий спектр услуг</h4>
 							<div class="item-why-are-we__body">
-								<div class="item-why-are-we__picture"><img src="img/why-are-we/dog&cat.svg" alt="dog&cat"
-										class="item-why-are-we__image"></div>
+								<div class="item-why-are-we__picture"><img src="img/why-are-we/dog&cat.svg" alt="dog&cat" class="item-why-are-we__image"></div>
 								<p class="item-why-are-we__text">Кроме широкопрофильных докторов в клинике развиты узкие
 									направления в ветеринарии – офтальмология, стоматология, дерматология, травматология,
 									ортопедия и онкология</p>
@@ -467,8 +402,7 @@
 						<article class="why-are-we__item item-why-are-we">
 							<h4 class="item-why-are-we__title">Большой опыт</h4>
 							<div class="item-why-are-we__body">
-								<div class="item-why-are-we__picture"><img src="img/why-are-we/hand.svg" alt="hand"
-										class="item-why-are-we__image"></div>
+								<div class="item-why-are-we__picture"><img src="img/why-are-we/hand.svg" alt="hand" class="item-why-are-we__image"></div>
 								<p class="item-why-are-we__text">30 высококвалифицированных врачей нашей клиники предоставляют
 									ветеринарную помощь уже на протяжении 18 лет!</p>
 							</div>
@@ -476,8 +410,7 @@
 						<article class="why-are-we__item item-why-are-we">
 							<h4 class="item-why-are-we__title">Собственная лаборатория</h4>
 							<div class="item-why-are-we__body">
-								<div class="item-why-are-we__picture"><img src="img/why-are-we/laboratory.svg" alt="laboratory"
-										class="item-why-are-we__image"></div>
+								<div class="item-why-are-we__picture"><img src="img/why-are-we/laboratory.svg" alt="laboratory" class="item-why-are-we__image"></div>
 								<p class="item-why-are-we__text">Оборудованная профессиональным оснащением производства компании
 									IDEXX International Inc.(США), которое позволяет получить результаты исследования прямо на
 									приеме</p>
@@ -486,8 +419,7 @@
 						<article class="why-are-we__item item-why-are-we">
 							<h4 class="item-why-are-we__title">Оснащенные стационары</h4>
 							<div class="item-why-are-we__body">
-								<div class="item-why-are-we__picture"><img src="img/why-are-we/house.svg" alt="house"
-										class="item-why-are-we__image"></div>
+								<div class="item-why-are-we__picture"><img src="img/why-are-we/house.svg" alt="house" class="item-why-are-we__image"></div>
 								<p class="item-why-are-we__text">Обычный и инфекционный стационар с индивидуальным подогревом
 									каждой клетки. Для питомцев в критическом состоянии предусмотрены кислородные камеры</p>
 							</div>
@@ -495,8 +427,7 @@
 						<article class="why-are-we__item item-why-are-we">
 							<h4 class="item-why-are-we__title">Новейшее оборудование</h4>
 							<div class="item-why-are-we__body">
-								<div class="item-why-are-we__picture"><img src="img/why-are-we/microscope.svg" alt="microscope"
-										class="item-why-are-we__image"></div>
+								<div class="item-why-are-we__picture"><img src="img/why-are-we/microscope.svg" alt="microscope" class="item-why-are-we__image"></div>
 								<p class="item-why-are-we__text">Помимо лабораторного оборудования и цифрового рентгена в
 									клинике используется современный эндоскоп KARL STORZ</p>
 							</div>
@@ -504,8 +435,7 @@
 						<article class="why-are-we__item item-why-are-we">
 							<h4 class="item-why-are-we__title">Запись на прием онлайн</h4>
 							<div class="item-why-are-we__body">
-								<div class="item-why-are-we__picture"><img src="img/why-are-we/24_7.svg" alt="24/7"
-										class="item-why-are-we__image"></div>
+								<div class="item-why-are-we__picture"><img src="img/why-are-we/24_7.svg" alt="24/7" class="item-why-are-we__image"></div>
 								<p class="item-why-are-we__text">Запись на приём позволяет избежать ожиданий в очереди, но если
 									вы не можете приехать - мы выезжаем на дом!</p>
 							</div>
@@ -513,8 +443,7 @@
 						<article class="why-are-we__item item-why-are-we">
 							<h4 class="item-why-are-we__title">Аптека и зоомагазин</h4>
 							<div class="item-why-are-we__body">
-								<div class="item-why-are-we__picture"><img src="img/why-are-we/pharmacy.svg" alt="pharmacy"
-										class="item-why-are-we__image"></div>
+								<div class="item-why-are-we__picture"><img src="img/why-are-we/pharmacy.svg" alt="pharmacy" class="item-why-are-we__image"></div>
 								<p class="item-why-are-we__text">Для удобства в клинике предусмотрен аптечный пункт, а также
 									бутик с одеждой и косметическими средствами для ухода за домашними любимцами</p>
 							</div>
@@ -522,8 +451,7 @@
 						<article class="why-are-we__item item-why-are-we">
 							<h4 class="item-why-are-we__title">Груминг-салон</h4>
 							<div class="item-why-are-we__body">
-								<div class="item-why-are-we__picture"><img src="img/why-are-we/scissors.svg" alt="scissors"
-										class="item-why-are-we__image"></div>
+								<div class="item-why-are-we__picture"><img src="img/why-are-we/scissors.svg" alt="scissors" class="item-why-are-we__image"></div>
 								<p class="item-why-are-we__text">Отдельный кабинет для проведения гигиенческих и косметических
 									процедур, таких как мытьё и сушка, стрижка или тримминг, уход за ушами, глазами и когтями и
 									многое другое</p>
@@ -540,23 +468,12 @@
 							для питомцев и
 							их хозяев</h2>
 						<div class="app__block">
-							<a href="#" class="app__link"><img src="img/app/app_store.svg" alt="app_store"
-									class="app__icon"></a>
-							<a href="#" class="app__link">
-								<picture>
-									<source srcset="img/app/google_play.webp" type="image/webp"><img
-										src="img/app/google_play.png" alt="google_play" class="app__icon">
-								</picture>
-							</a>
+							<a href="#" class="app__link"><img src="img/app/app_store.svg" alt="app_store" class="app__icon"></a>
+							<a href="#" class="app__link"><picture><source srcset="img/app/google_play.webp" type="image/webp"><img src="img/app/google_play.png" alt="google_play" class="app__icon"></picture></a>
 						</div>
 					</div>
 					<!-- <div class="app__picture"><picture><source srcset="img/app/dog.webp" type="image/webp"><img src="img/app/dog.png" alt="phone" class="app__image"></picture></div> -->
-					<div class="app__picture">
-						<picture>
-							<source srcset="img/app/phone.webp" type="image/webp"><img src="img/app/phone.png" alt="phone"
-								class="app__image">
-						</picture>
-					</div>
+					<div class="app__picture"><picture><source srcset="img/app/phone.webp" type="image/webp"><img src="img/app/phone.png" alt="phone" class="app__image"></picture></div>
 				</div>
 			</section>
 			<section class="contacts">
@@ -579,10 +496,7 @@
 								<p class="body-contacts__work">Круглосуточно</p>
 							</div>
 						</div>
-						<iframe class="body-contacts__map"
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84236.85315106061!2d44.50888046637078!3d48.71691631171832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411aca393f116801%3A0x3fb7ff05cfa1a142!2z0YPQuy4g0JrRgNCw0YHQvdC-0L_QvtC70Y_QvdGB0LrQsNGPLCAzMCwg0JLQvtC70LPQvtCz0YDQsNC0LCDQktC-0LvQs9C-0LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDQwMDA3NQ!5e0!3m2!1sru!2sua!4v1661448762111!5m2!1sru!2sua"
-							width="950" height="526" style="border:0;" allowfullscreen="" loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<iframe class="body-contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84236.85315106061!2d44.50888046637078!3d48.71691631171832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411aca393f116801%3A0x3fb7ff05cfa1a142!2z0YPQuy4g0JrRgNCw0YHQvdC-0L_QvtC70Y_QvdGB0LrQsNGPLCAzMCwg0JLQvtC70LPQvtCz0YDQsNC0LCDQktC-0LvQs9C-0LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDQwMDA3NQ!5e0!3m2!1sru!2sua!4v1661448762111!5m2!1sru!2sua" width="950" height="526" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
 			</section>
@@ -619,14 +533,8 @@
 				</div>
 				<div class="footer__block block-footer">
 					<div class="block-footer__store">
-						<a href="#" class="block-footer__link"><img src="img/app/app_store.svg" alt="app_store"
-								class="block-footer__picture"></a>
-						<a href="#" class="block-footer__link">
-							<picture>
-								<source srcset="img/app/google_play.webp" type="image/webp"><img src="img/app/google_play.png"
-									alt="google_play" class="block-footer__picture">
-							</picture>
-						</a>
+						<a href="#" class="block-footer__link"><img src="img/app/app_store.svg" alt="app_store" class="block-footer__picture"></a>
+						<a href="#" class="block-footer__link"><picture><source srcset="img/app/google_play.webp" type="image/webp"><img src="img/app/google_play.png" alt="google_play" class="block-footer__picture"></picture></a>
 					</div>
 					<div class="block-footer__social social-block-footer">
 						<a href="#" class="social-block-footer__link">
@@ -651,8 +559,22 @@
 	</div>
 	</footer>
 	</div>
-
-	<script src="js/app.min.js?_v=20220825224955"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><img src="img/footer/close.svg" alt="close" class="popup__icon"></button>
+				<div class="popup__title">Ваш город
+				</div>
+				<a id="one" href="#" class="popup__link">
+					<div class="popup__text">Волгоград</div>
+				</a>
+				<a id="two" href="#" class="popup__link">
+					<div class="popup__text">Грозый</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220826200134"></script>
 </body>
 
 </html>
