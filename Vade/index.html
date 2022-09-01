@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220901200600">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220901203136">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,8 +37,8 @@
 		<main class="page">
 			<section class="mainpage">
 				<div class="mainpage__container">
-					<div class="mainpage__wrapper">
-						<div class="mainpage__block">
+					<div data-watch class="mainpage__wrapper">
+						<div data-watch class="mainpage__block">
 							<h1 class="mainpage__title title">Connecting the curb to new insights</h1>
 							<div class="mainpage__body">
 								<p class="mainpage__text">Real-time curb data for smart cities. Measure occupancy, analyze
@@ -65,7 +65,7 @@
 								space in real-time.</p>
 							<a href="#" class="get-to-know__button button">More about our technology</a>
 						</div>
-						<div data-watch data-watch-once class="get-to-know__picture">
+						<div data-watch class="get-to-know__picture">
 							<picture>
 								<source srcset="img/get-to-know/camera.webp" type="image/webp"><img
 									src="img/get-to-know/camera.jpg" alt="camera" class="get-to-know__image">
@@ -141,21 +141,21 @@
 					<div class="trusted__body body-trusted">
 						<p class="body-trusted__text">Here's who we've worked with</p>
 						<div class="body-trusted__items">
-							<div data-watch data-watch-once class="body-trusted__picture body-trusted__picture_v1"><img
+							<div data-watch class="body-trusted__picture body-trusted__picture_v1"><img
 									src="img/trusted/label_1.svg" alt="label" class="body-trusted__icon"></div>
-							<div data-watch data-watch-once class="body-trusted__picture body-trusted__picture_v2"><img
+							<div data-watch class="body-trusted__picture body-trusted__picture_v2"><img
 									src="img/trusted/label_2.svg" alt="label" class="body-trusted__icon"></div>
-							<div data-watch data-watch-once class="body-trusted__picture body-trusted__picture_v3"><img
+							<div data-watch class="body-trusted__picture body-trusted__picture_v3"><img
 									src="img/trusted/label_3.svg" alt="label" class="body-trusted__icon"></div>
-							<div data-watch data-watch-once class="body-trusted__picture body-trusted__picture_v4"><img
+							<div data-watch class="body-trusted__picture body-trusted__picture_v4"><img
 									src="img/trusted/label_4.svg" alt="label" class="body-trusted__icon"></div>
-							<div data-watch data-watch-once class="body-trusted__picture body-trusted__picture_v5"><img
+							<div data-watch class="body-trusted__picture body-trusted__picture_v5"><img
 									src="img/trusted/label_5.svg" alt="label" class="body-trusted__icon"></div>
-							<div data-watch data-watch-once class="body-trusted__picture body-trusted__picture_v6"><img
+							<div data-watch class="body-trusted__picture body-trusted__picture_v6"><img
 									src="img/trusted/label_6.svg" alt="label" class="body-trusted__icon"></div>
-							<div data-watch data-watch-once class="body-trusted__picture body-trusted__picture_v7"><img
+							<div data-watch class="body-trusted__picture body-trusted__picture_v7"><img
 									src="img/trusted/label_7.svg" alt="label" class="body-trusted__icon"></div>
-							<div data-watch data-watch-once class="body-trusted__picture body-trusted__picture_v8"><img
+							<div data-watch class="body-trusted__picture body-trusted__picture_v8"><img
 									src="img/trusted/label_8.svg" alt="label" class="body-trusted__icon"></div>
 						</div>
 					</div>
@@ -194,7 +194,7 @@
 				<div class="our-blog__container_small">
 					<h2 class="our-blog__title title">Our blog posts</h2>
 					<div class="our-blog__items">
-						<article class="our-blog__item item-our-blog">
+						<div class="our-blog__item item-our-blog">
 							<a href="#" class="item-our-blog__link">
 								<div class="item-our-blog__picture-ibg">
 									<picture>
@@ -208,8 +208,8 @@
 									<p class="item-our-blog__data">September 21, 2021</p>
 								</div>
 							</a>
-						</article>
-						<article class="our-blog__item item-our-blog">
+						</div>
+						<div class="our-blog__item item-our-blog">
 							<a href="#" class="item-our-blog__link">
 								<div class="item-our-blog__picture-ibg">
 									<picture>
@@ -223,8 +223,8 @@
 									<p class="item-our-blog__data">September 21, 2021</p>
 								</div>
 							</a>
-						</article>
-						<article class="our-blog__item item-our-blog">
+						</div>
+						<div class="our-blog__item item-our-blog">
 							<a href="#" class="item-our-blog__link">
 								<div class="item-our-blog__picture-ibg">
 									<picture>
@@ -238,7 +238,7 @@
 									<p class="item-our-blog__data">September 21, 2021</p>
 								</div>
 							</a>
-						</article>
+						</div>
 					</div>
 					<a href="#" class="our-blog__button button">Read all posts</a>
 				</div>
@@ -262,7 +262,7 @@
 							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="position"
 								class="block-form__input">
 						</div>
-						<textarea class="form__textarea" type="text" placeholder="message"></textarea>
+						<textarea class="form__textarea" placeholder="message"></textarea>
 						<button class="form__button btn">Get in touch</button>
 					</form>
 				</div>
@@ -313,7 +313,7 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220901200600"></script>
+	<script src="js/app.min.js?_v=20220901203136"></script>
 </body>
 
 </html>
