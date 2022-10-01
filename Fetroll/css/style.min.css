@@ -1349,12 +1349,7 @@ textarea.input {
       width: 100%
    }
 
-   .swiper-slide-active .slide-reviews__block {
-      -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-      flex: 1 1 auto;
-      opacity: 1
-   }
+
 
    .swiper-slide-active .slide-reviews__picture-ibg {
       padding-bottom: 100%
@@ -1687,10 +1682,19 @@ textarea.input {
    }
 }
 
-.webp .main-page {
+.main-page {
    background: url(../img/main-page/bg_cloud.webp) left top no-repeat, url(../img/main-page/bg_2.webp) left top no-repeat, url(../img/main-page/bg_3.webp) center/cover no-repeat, url(../img/main-page/bg_1.webp) right no-repeat
 }
 
 .webp .about {
    background: url(../img/about/bg_1.svg) 0 0 no-repeat, url(../img/about/bg_2.webp) right 3.125rem no-repeat, url(../img/about/bg_3.webp) right 3.125rem no-repeat, #fff
+}
+
+@media (max-width:48em) {
+   .swiper-slide-active .slide-reviews__block {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      opacity: 1
+   }
 }
