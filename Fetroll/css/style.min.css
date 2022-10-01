@@ -1697,7 +1697,11 @@ textarea.input {
 }
 
 @media (max-width:29.99875em) {
-   .main-page {
+   .no-webp .main-page {
+      background: url(../img/main-page/bg_4.svg) left top no-repeat
+   }
+
+   .webp .main-page {
       background: url(../img/main-page/bg_4.svg) left top no-repeat
    }
 }
