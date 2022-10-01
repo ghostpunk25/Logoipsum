@@ -1550,10 +1550,6 @@ textarea.input {
       padding: 1.75rem 1.5rem .3125rem
    }
 
-   .about {
-      background: #fff
-   }
-
    .body-why-choose__item {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap
@@ -1703,5 +1699,15 @@ textarea.input {
 
    .webp .main-page {
       background: url(../img/main-page/bg_4.svg) left top no-repeat
+   }
+}
+
+@media (max-width:47.99875em) {
+   .no-webp .about {
+      background: #fff
+   }
+
+   .webp .about {
+      background: #fff
    }
 }
