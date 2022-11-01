@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f40000;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="_50-document_-_book" data-name="50-document - book" class="cls-1" d="M1087.5,862.494l-22.5-6v-39l22.5,3,22.5-3h0v39Zm-1.5-39.2-18-2.4v33.4l18,4.8V823.3Zm21-2.4-18,2.4v35.8l18-4.8V820.9Z" transform="translate(-1065 -817.5)"/>
+</svg>
