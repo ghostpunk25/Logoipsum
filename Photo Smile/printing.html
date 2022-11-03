@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>Фотодрук</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221103204259">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo"><img src="img/header/logo.png" alt="logo" class="header__picture"></a>
+				<div class="header__body">
+					<div class="header__control control-header">
+						<a href="#" class="control-header__link">Вхід</a>
+						<a href="#" class="control-header__link">Реєстрація</a>
+					</div>
+					<div class="header__block">
+						<div class="header__menu menu">
+							<button data-da=".header__block, 991.98,2" type="button" class="menu__icon icon-menu"><span></span></button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a data-goto=".page" href="#" class="menu__link">Головна</a>
+									<li class="menu__item"><a data-goto=".graduation-albums" href="#" class="menu__link">Випускні
+											альбоми</a>
+									</li>
+									<li class="menu__item"><a data-goto=".photo-printing" href="#" class="menu__link">Фотодрук</a>
+									</li>
+									<li class="menu__item"><a data-goto=".cups" href="#" class="menu__link">Чашки</a></li>
+									<li class="menu__item"><a data-goto=".magnets" href="#" class="menu__link">Магніти</a>
+									</li>
+									<li class="menu__item"><a data-goto=".puzzle" href="#" class="menu__link">Пазли</a></li>
+								</ul>
+							</nav>
+						</div>
+						<a href="#" class="header__link"><img src="img/header/basket.svg" alt="basket" class="header__icon"><span class="header__counter">0</span></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="printing-store block-production">
+				<div class="block-production__container">
+					<div class="block-production__body">
+						<h1 class="block-production__title title">Друк фотографій</h1>
+						<ul class="block-production__list">
+							<li class="block-production__text">Замовляйте друк фотографій у будь-який час.</li>
+							<li class="block-production__text">Вибирайте відповідний тип паперу та формат друку.</li>
+							<li class="block-production__text">Оперативне виготовлення.</li>
+							<li class="block-production__text">Тільки якісні матеріали.</li>
+						</ul>
+						<a href="#" class="block-production__button button">ЗАМОВИТИ ФОТОГРАФІЇ</a>
+					</div>
+					<div class="block-production__slider printing-store__slider swiper">
+						<div class="block-production__wrapper swiper-wrapper">
+							<div class="block-production__slide swiper-slide">
+								<div class="block-production__picture-ibg"><img src="img/printing-store/printing-store/foto-print-bg.png" alt="foto-print" class="block-production__image"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="calculator">
+				<div class="calculator__container">
+					<h2 class="calculator__title title">Калькулятор фотодруку</h2>
+					<div class="calculator__format format">
+						<h3 class="format__title">ФОРМАТ:</h3>
+						<div class="format__body">
+							<div class="options">
+								<div class="options__item">
+									<input hidden id="o_1" class="options__input" checked type="radio" value="2.99" name="option">
+									<label for="o_1" class="options__label"><span class="options__text">10x15</span></label>
+								</div>
+								<div class="options__item">
+									<input hidden id="o_2" class="options__input" type="radio" value="4.99" name="option">
+									<label for="o_2" class="options__label"><span class="options__text">13x18</span></label>
+								</div>
+								<div class="options__item">
+									<input hidden id="o_3" class="options__input" type="radio" value="5.99" name="option">
+									<label for="o_3" class="options__label"><span class="options__text">15x20</span></label>
+								</div>
+								<div class="options__item">
+									<input hidden id="o_4" class="options__input" type="radio" value="6.99" name="option">
+									<label for="o_4" class="options__label"><span class="options__text">15x21</span></label>
+								</div>
+								<div class="options__item">
+									<input hidden id="o_5" class="options__input" type="radio" value="13.99" name="option">
+									<label for="o_5" class="options__label"><span class="options__text">20x30</span></label>
+								</div>
+							</div>
+							<h3 class="format__title">ПАПЕР:</h3>
+							<div class="options-paper">
+								<div class="options-paper__item">
+									<input hidden id="b_1" class="options-paper__input" checked type="radio" value="1" name="options-paper">
+									<label for="b_1" class="options-paper__label"><span class="options-paper__text">Матова</span></label>
+								</div>
+								<div class="options-paper__item">
+									<input hidden id="b_2" class="options-paper__input" type="radio" value="2" name="options-paper">
+									<label for="b_2" class="options-paper__label"><span class="options-paper__text">Глянцева</span></label>
+								</div>
+							</div>
+							<div class="format__block block-format">
+								<div class="block-format__text">КІЛЬКІСТЬ:</div>
+								<div class="block-format__body">
+									<span class="block-format__minus">-</span>
+									<span class="block-format__number">1</span>
+									<span class="block-format__plus">+</span>
+								</div>
+							</div>
+							<div class="format__total">ВСЬОГО: <span class="format__total_number">2.99</span> грн.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="photo-print">
+				<div class="photo-print__container">
+					<h2 class="photo-print__title title">ФОТОДРУК</h2>
+					<div class="photo-print__body">
+						<div class="photo-print__picture"><img src="img/printing-store/photo-print/photo-print.jpg" alt="photo-print" class="photo-print__image"></div>
+						<div class="photo-print__paragraph">
+							<p class="photo-print__text">Друк фотографій – це вірний та надійний спосіб зберегти ваші
+								спогади.</p>
+							<p class="photo-print__text">У наш час, коли фотографія виходить за допомогою цифрових
+								фотоапаратів, відразу видно на екранах телефонів, планшетів, комп'ютерів, демонструється
+								найчастіше через інтернет, фотодрук втратив колишню актуальність.</p>
+							<p class="photo-print__text">Але тільки так ви зможете, напевно, зберегти фото на десятиліття,
+								зберігши те, що можна потримати в руках.
+								і в колі близьких людей, наново пережити моменти щастя.</p>
+						</div>
+					</div>
+					<a href="#" class="photo-print__button button">Замовити фотодрук</a>
+				</div>
+			</section>
+			<section class="pruning block-print">
+				<div class="block-print__container">
+					<h2 class="block-print__title title">Обрізання фотографій під час друку</h2>
+					<p class="block-print__text">Різні формати фотодруку мають різне співвідношення сторін,
+						і воно не завжди збігається із співвідношенням сторін файлу фотографії.</p>
+					<div class="block-print__body body-block-print">
+						<div class="body-block-print__item">
+							<div class="body-block-print__picture body-block-print__picture body-block-print__picture_size">
+								<img src="img/printing-store/pruning/pruning-photo_1.jpg" alt="pruning-photo" class="body-block-print__image">
+							</div>
+							<p class="body-block-print__text">з полями</p>
+						</div>
+						<div class="body-block-print__item">
+							<div class="body-block-print__picture body-block-print__picture body-block-print__picture_size">
+								<img src="img/printing-store/pruning/pruning-photo_2.jpg" alt="pruning-photo" class="body-block-print__image">
+							</div>
+							<p class="body-block-print__text">з обрізанням</p>
+						</div>
+					</div>
+					<p class="block-print__paragraph">Тому ви повинні вирішити для себе: або фотографія роздруковується
+						повністю
+						і на папері у вас залишаються білі поля, або знімок заповнить формат повністю, але тоді частина
+						знімка, який ви бачите на екрані - відрізається.
+						Якщо у вас увімкнена корекція оператора, то обрізка буде скоригована для оптимальної композиції
+						відбитка.</p>
+				</div>
+			</section>
+			<section class="print-quality block-print">
+				<div class="block-print__container">
+					<h2 class="block-print__title title">Якість відбитка та розмір файлу</h2>
+					<p class="block-print__text">Для того щоб надрукувати фотографію бажаного формату, і при цьому її якість
+						відповідала вашим очікуванням, необхідно щоб файл, що роздруковується, був достатнього цифрового
+						розміру в пікселях, тобто. мав достатній дозвіл. В ідеалі 300 пікселів на дюйм (2,52 см) паперу.
+						Враховуйте це при виборі формату та намагайтеся завантажити найбільші файли.</p>
+					<div class="block-print__body body-block-print">
+						<div class="body-block-print__item">
+							<div class="body-block-print__picture"><img src="img/printing-store/print-quality/print-quality_1.jpg" alt="print-quality" class="body-block-print__image"></div>
+							<p class="body-block-print__text">300 крапок</p>
+						</div>
+						<div class="body-block-print__item">
+							<div class="body-block-print__picture"><img src="img/printing-store/print-quality/print-quality_2.jpg" alt="print-quality" class="body-block-print__image"></div>
+							<p class="body-block-print__text">150 крапок</p>
+						</div>
+						<div class="body-block-print__item">
+							<div class="body-block-print__picture"><img src="img/printing-store/print-quality/print-quality_3.jpg" alt="print-quality" class="body-block-print__image"></div>
+							<p class="body-block-print__text">72 крапки</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="our-print slider-product">
+				<div class="slider-product__container">
+					<h2 class="slider-product__title title">Приклади наших фотографій</h2>
+					<div class="slider-product__body">
+						<div class="slider-product__slider swiper">
+							<div class="slider-product__wrapper swiper-wrapper">
+								<div class="slider-product__slide swiper-slide">
+									<div class="slider-product__picture"><img src="img/printing-store/our-print/photo-print_1.jpg" alt="photo-print" class="slider-product__image"></div>
+								</div>
+								<div class="slider-product__slide swiper-slide">
+									<div class="slider-product__picture"><img src="img/printing-store/our-print/photo-print_2.jpg" alt="photo-print" class="slider-product__image"></div>
+								</div>
+								<div class="slider-product__slide swiper-slide">
+									<div class="slider-product__picture"><img src="img/printing-store/our-print/photo-print_3.jpg" alt="photo-print" class="slider-product__image"></div>
+								</div>
+								<div class="slider-product__slide swiper-slide">
+									<div class="slider-product__picture"><img src="img/printing-store/our-print/photo-print_4.jpg" alt="photo-print" class="slider-product__image"></div>
+								</div>
+							</div>
+							<button type="button" class="swiper-button-prev slider-product__prev"><img src="img/our-cups/arrow.jpg" alt="arrow" class="slider-product__icon"></button>
+							<button type="button" class="swiper-button-next slider-product__next"><img src="img/our-cups/arrow.jpg" alt="arrow" class="slider-product__icon"></button>
+						</div>
+					</div>
+					<a href="#" class="slider-product__button button">Замовити фотодрук</a>
+				</div>
+			</section>
+			<section class="printing-price">
+				<div class="cups-price__container">
+					<h2 class="cups-price__title title">ЦІНИ НА ЧАШКИ</h2>
+					<p class="cups-price__text">Вартість залежить від обраного типу гуртка та кількості замовлення.<br>
+						Оперативне виготовлення – 3 дні.</p>
+					<div class="cups-price__table table">
+						<div class="table__column table__column_bold">Формат</div>
+						<div class="table__column table__column_bold">Ціна (грн)</div>
+						<div class="table__column"></div>
+						<div class="table__column"></div>
+						<div class="table__column"></div>
+						<div class="table__column table__column_name">Глянцевий та Матовий<br> фотопапір</div>
+						<div class="table__column table__column_name">Розмір в мм</div>
+						<div class="table__column table__column_name">Розмір в пікселях</div>
+						<div class="table__column">10х15</div>
+						<div class="table__column">2.99</div>
+						<div class="table__column">102х152</div>
+						<div class="table__column">1205х1795</div>
+						<div class="table__column">13х18</div>
+						<div class="table__column">4.99</div>
+						<div class="table__column">127х178</div>
+						<div class="table__column">1500х2102</div>
+						<div class="table__column">15х20</div>
+						<div class="table__column">5.99</div>
+						<div class="table__column">152х203</div>
+						<div class="table__column">1795х2398</div>
+						<div class="table__column">15х21</div>
+						<div class="table__column">6.99</div>
+						<div class="table__column">152х216</div>
+						<div class="table__column">1795х2556</div>
+						<div class="table__column">20х30</div>
+						<div class="table__column">13.99</div>
+						<div class="table__column">203х305</div>
+						<div class="table__column">2402х3602</div>
+					</div>
+				</div>
+			</section>
+			<section class="printing-gallery gallery-goods">
+				<div class="gallery-goods__container">
+					<h2 class="gallery-goods__title title">Галерея</h2>
+					<div class="gallery-goods__body">
+						<div class="gallery-goods__picture gallery-goods__picture_big"><img src="img/printing-store/printing-gallery/photo-print_1.jpg" alt="photo-print" class="gallery-goods__image"></div>
+						<div class="gallery-goods__picture gallery-goods__picture"><img src="img/printing-store/printing-gallery/photo-print_2.jpg" alt="photo-print" class="gallery-goods__image"></div>
+						<div class="gallery-goods__picture gallery-goods__picture"><img src="img/printing-store/printing-gallery/photo-print_3.jpg" alt="photo-print" class="gallery-goods__image"></div>
+						<div class="gallery-goods__picture gallery-goods__picture"><img src="img/printing-store/printing-gallery/photo-print_4.jpg" alt="photo-print" class="gallery-goods__image"></div>
+						<div class="gallery-goods__picture gallery-goods__picture"><img src="img/printing-store/printing-gallery/photo-print_5.jpg" alt="photo-print" class="gallery-goods__image"></div>
+						<div class="gallery-goods__picture gallery-goods__picture_big"><img src="img/printing-store/printing-gallery/photo-print_6.jpg" alt="photo-print" class="gallery-goods__image"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<nav class="footer__body">
+						<ul class="footer__list">
+							<li class="footer__item"><a data-goto=".page" href="#" class="footer__link">Головна</a>
+							<li class="footer__item"><a data-goto=".graduation-albums" href="#" class="footer__link">Випускні
+									альбоми</a></li>
+							<li class="footer__item"><a data-goto=".photo-printing" href="#" class="footer__link">Фотодрук</a></li>
+							<li class="footer__item"><a data-goto=".cups" href="#" class="footer__link">Чашки</a></li>
+							<li class="footer__item"><a data-goto=".magnets" href="#" class="footer__link">Магніти</a></li>
+							<li class="footer__item"><a data-goto=".puzzle" href="#" class="footer__link">Пазли</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__social social-footer">
+					<a href="#" class="social-footer__link"><img src="img/footer/twitter.png" alt="twitter" class="social-footer__icon"></a>
+					<a href="#" class="social-footer__link"><img src="img/footer/Facebook.png" alt="Facebook" class="social-footer__icon"></a>
+					<a href="#" class="social-footer__link"><img src="img/footer/Instagram.png" alt="Instagram" class="social-footer__icon"></a>
+				</div>
+				<div class="footer__block">
+					<p class="footer__text">© 2022, PhotoSmile. Всі права захищені.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">X</button>
+				<div class="popup__text">
+					<iframe class="popup__iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSf0bkoCLfBNcoUjr6rpZqdRphEJGmKcYxHpMQuLyUMy1nJRMg/viewform?embedded=true"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="form" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">X</button>
+				<div class="popup__text">
+					<iframe class="popup__iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSer5XnPgkIss_8Zd1fhY0BFNGy92dR64Az2fx8_ocgHebomLw/viewform?embedded=true"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221103204259"></script>
+</body>
+
+</html>
